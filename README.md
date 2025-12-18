@@ -1,0 +1,1 @@
+3. Wine quality prediction using neural networks. Developed and optimized a Neural Network for wine quality prediction, achieving an 82% F1 score. The deep learning model demonstrated superior performance compared to baseline K-NN models. Tools: Python, Pandas, Matplotlib, Scikit-learn.
