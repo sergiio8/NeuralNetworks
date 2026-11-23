@@ -10,7 +10,7 @@ The project is intended as an educational model-comparison exercise, not as a pr
 
 ## Dataset
 
-The included `calidad_vinos.csv` file contains 1,599 wine samples with 11 physicochemical input variables and a `quality` target:
+The included [calidad_vinos.csv](coursework/wine-quality/calidad_vinos.csv) file contains 1,599 wine samples with 11 physicochemical input variables and a `quality` target:
 
 - fixed acidity
 - volatile acidity
@@ -28,7 +28,7 @@ The notebook identifies the dataset as the UCI Wine Quality dataset and models q
 
 ## Methods
 
-`NNSergio_Daniel.ipynb` contains the complete analysis:
+[NNSergio_Daniel.ipynb](coursework/wine-quality/NNSergio_Daniel.ipynb) contains the complete analysis:
 
 1. Exploratory data inspection and Pearson-correlation-based feature selection
 2. Feature standardization
@@ -54,28 +54,31 @@ The weighted metrics are substantially higher than macro F1 because the dataset 
 
 ## Reproducing the notebook
 
-1. Create and activate a Python environment.
-2. Install the dependencies:
+1. Change to the coursework module directory:
+
+   ```bash
+   cd coursework/wine-quality
+   ```
+
+2. Create and activate a Python environment, then install the dependencies from that directory:
 
    ```bash
    python -m pip install -r requirements.txt
    ```
 
-3. Launch Jupyter:
+3. Launch Jupyter from the module directory and run the notebook cells in order so that the relative path to `calidad_vinos.csv` resolves:
 
    ```bash
-   jupyter notebook
+   jupyter notebook NNSergio_Daniel.ipynb
    ```
-
-4. Open `NNSergio_Daniel.ipynb` and run the cells in order from the repository root so that `calidad_vinos.csv` is found.
 
 ## Repository contents
 
 | File | Description |
 | --- | --- |
-| `NNSergio_Daniel.ipynb` | Coursework analysis and model evaluation |
-| `calidad_vinos.csv` | Wine-quality dataset used by the notebook |
-| `requirements.txt` | Python dependencies required to run the notebook |
+| [`coursework/wine-quality/NNSergio_Daniel.ipynb`](coursework/wine-quality/NNSergio_Daniel.ipynb) | Coursework analysis and model evaluation |
+| [`coursework/wine-quality/calidad_vinos.csv`](coursework/wine-quality/calidad_vinos.csv) | Wine-quality dataset used by the notebook |
+| [`coursework/wine-quality/requirements.txt`](coursework/wine-quality/requirements.txt) | Python dependencies required to run the notebook |
 | `LICENSE` | Repository license |
 
 ## Limitations
